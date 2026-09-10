@@ -1,0 +1,45 @@
+{
+  "$schema": "https://desirecore.net/schemas/agentfs/v1/agent-config.json",
+  "version": "0.1.0",
+  "llm": {
+    "routingMode": "fixed",
+    "smart": {
+      "profile": {
+        "tier": "flagship",
+        "requiredCapabilities": [
+          "vision",
+          "tool_use"
+        ],
+        "reasoning": "auto"
+      }
+    },
+    "provider": "desirecore-cloud",
+    "providerId": "desirecore-cloud",
+    "model": "qwen3.8-max",
+    "maxRetryDelayMs": 32000
+  },
+  "heartbeat": {
+    "enabled": false
+  },
+  "session_mode": {
+    "manual": false
+  },
+  "env": {
+    "enabled": true,
+    "includeWeekday": true,
+    "includeLocalTime": true,
+    "includeSessionStart": true,
+    "includeOs": true,
+    "includeRuntime": true,
+    "includeManagedRuntimes": true
+  },
+  "mcp_servers": {},
+  "capabilities": [],
+  "trigger_patterns": [],
+  "accepts_handoff": true,
+  "accepts_messages": true,
+  "max_concurrent_sessions": 3,
+  "id": "be6716d8-f82e-48ca-821e-369e416e27bb",
+  "name": "标书检查助手",
+  "description": "标书检查助手：新人安装入口、环境前检和把用户任务交给团队"
+}

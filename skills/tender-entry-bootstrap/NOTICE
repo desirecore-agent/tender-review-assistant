@@ -1,0 +1,53 @@
+# Third-party Notices
+
+## Dependencies and runtime
+
+This skill is a self-contained DesireCore agent skill. It does not bundle any
+third-party libraries. Its Python scripts use only the Python standard library.
+
+The following components are **not** part of this skill and are provided
+independently under their own licenses:
+
+| Component | Provided by | Purpose | License |
+| --- | --- | --- | --- |
+| Python runtime | Python Software Foundation (or system vendor) | Executes the skill's scripts | Python Software Foundation License |
+| DesireCore platform | DesireCore | Agent runtime, tools, GUI, workdir management | See the LICENSE/NOTICE shipped with the installed DesireCore version |
+| Cloud model services | Respective providers (configured via DesireCore compute) | Document analysis, text generation, image understanding | Provider-specific terms and pricing |
+| PDF rendering capability | DesireCore platform | `Read(pdf_mode=render)` page rendering (provided by the platform, not bundled with this skill) | See the LICENSE/NOTICE shipped with the installed DesireCore version |
+
+**License note:** This skill's MIT license covers only the original assets in this directory (code, docs, schemas, smoke fixture). It does not re-license or extend to the Python runtime, DesireCore platform, cloud model services, or any other third-party component. Each component is used under the license terms of its installed version.
+
+## 中文说明
+
+本技能不打包任何第三方库，Python 脚本仅使用标准库。
+
+以下组件不属于本技能，各自遵循其实际安装版本附带的许可/声明：
+
+| 组件 | 提供方 | 用途 | 许可 |
+| --- | --- | --- | --- |
+| Python 运行时 | Python 软件基金会（或系统供应商） | 执行技能脚本 | Python Software Foundation License |
+| DesireCore 平台 | DesireCore | Agent 运行时、工具、界面、工作目录管理 | 见已安装 DesireCore 版本附带的 LICENSE/NOTICE |
+| 云端模型服务 | 各供应商（通过 DesireCore 算力配置） | 文档分析、文本生成、图像理解 | 各供应商自有条款与定价 |
+| PDF 渲染能力 | DesireCore 平台 | `Read(pdf_mode=render)` 页面渲染（平台提供，非本技能打包） | 见已安装 DesireCore 版本附带的 LICENSE/NOTICE |
+
+**许可声明：** 本技能的 MIT 许可仅覆盖本目录内的原创资产（代码、文档、schema、smoke fixture）。不重新许可或扩展至 Python 运行时、DesireCore 平台、云端模型服务或任何其他第三方组件。各组件均按其安装版本的许可条款使用。
+
+## What this skill does NOT include
+
+- No OCR engines (Tesseract, PaddleOCR, etc.)
+- No web scraping or URL upload libraries
+- No email client libraries
+- No external network calls from scripts
+- No bundled model weights or API keys
+
+## Asset provenance
+
+All files in this skill directory (`assets/`, `scripts/`, `schemas/`, `docs/`,
+`SKILL.md`, `README.md`, `README.zh-CN.md`, `LICENSE`, `NOTICE`,
+`release-manifest.json`) are original work by the Tender Review contributors,
+created as part of the `tender-entry-bootstrap` skill for the
+`tender-review-assistant` agent.
+
+The non-sensitive smoke PDF (`assets/smoke-tender-entry.pdf`) is a synthetic
+fixture containing only generic placeholder text and an embedded bitmap badge.
+It contains no tender content, personal data, or pricing information.

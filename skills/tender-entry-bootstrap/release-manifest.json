@@ -1,0 +1,15 @@
+{
+  "manifestSchema": "tender-entry-bootstrap/release-manifest/v2",
+  "packageId": "tender-entry-bootstrap",
+  "packageVersion": "0.1.0",
+  "status": "draft",
+  "updatedAt": "2026-08-31T20:20:00+08:00",
+  "minimumClientVersion": null,
+  "team": null,
+  "members": [],
+  "platformRelease": null,
+  "supportedHost": {
+    "os": "darwin",
+    "architecture": "arm64"
+  }
+}
