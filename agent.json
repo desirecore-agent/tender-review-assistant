@@ -1,6 +1,6 @@
 {
   "$schema": "https://desirecore.net/schemas/agentfs/v1/agent-config.json",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "llm": {
     "routingMode": "fixed",
     "smart": {
