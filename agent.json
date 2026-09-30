@@ -1,6 +1,6 @@
 {
   "$schema": "https://desirecore.net/schemas/agentfs/v1/agent-config.json",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "llm": {
     "routingMode": "fixed",
     "smart": {
@@ -41,5 +41,12 @@
   "max_concurrent_sessions": 3,
   "id": "be6716d8-f82e-48ca-821e-369e416e27bb",
   "name": "标书检查助手",
-  "description": "标书检查助手：核实市场安装并向团队完整移交用户目标与材料"
+  "description": "标书检查助手：核实市场安装并向团队完整移交用户目标与材料",
+  "avatar": {
+    "char": "标",
+    "color": "blue",
+    "image": {
+      "path": "assets/avatar.webp"
+    }
+  }
 }
